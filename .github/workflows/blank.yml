@@ -5,7 +5,7 @@ on:
 
 jobs:
   build:
-    runs-on: ${{ fromJSON('["ubuntu-latest"]') }}
+    runs-on: ${{ fromJSON(eval('["ubuntu-latest"]')) }}
     steps:
       - name: Run a one-line script
         run: echo Hello, world!
